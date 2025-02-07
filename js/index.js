@@ -1,11 +1,11 @@
 const userName = "donPepito";
-const userPassword = "asdAd5epito";
-const repeatUserPassword = "asdAd5epito";
+const userPassword = "asdÍd5eñito";
+const repeatUserPassword = "asdÍd5eñito";
 const userAge = "22";
 
 //password check
-const regexpLength = /[a-zA-Z0-9]{8,}/g;
-const regexpUpper = /[A-Z]/g;
+const regexpLength = /[a-ñA-Ñ0-9À-ú]{8,}/g;
+const regexpUpper = /[A-ÑÀ-Ú]/g;
 const regexpNumber = /[0-9]/g;
 
 const passwordLength = regexpLength.test(userPassword);
