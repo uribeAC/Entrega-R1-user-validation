@@ -3,11 +3,10 @@ const userPassword = "adc53áÑÙ";
 const repeatedUserPassword = "adc53áÑÙ";
 const userAge = 22;
 
-const lengthRegEx = /[a-zA-Z0-9À-ú]{8,}/g;
 const upperCaseRegEx = /[A-ZÀ-Ú]/g;
 const numberRegEx = /[0-9]/g;
 
-const hasPasswordLength = lengthRegEx.test(userPassword);
+const hasPasswordLength = userPassword.length >= 8;
 const hasPasswordUpperCase = upperCaseRegEx.test(userPassword);
 const hasPasswordNumber = numberRegEx.test(userPassword);
 
