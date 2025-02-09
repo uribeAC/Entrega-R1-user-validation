@@ -6,7 +6,8 @@ const userAge = 22;
 const upperCaseRegEx = /[A-ZÀ-Ú]/g;
 const numberRegEx = /[0-9]/g;
 
-const hasPasswordLength = userPassword.length >= 8;
+const minimumPasswordLength = 8;
+const hasPasswordLength = userPassword.length >= minimumPasswordLength;
 const hasPasswordUpperCase = upperCaseRegEx.test(userPassword);
 const hasPasswordNumber = numberRegEx.test(userPassword);
 
